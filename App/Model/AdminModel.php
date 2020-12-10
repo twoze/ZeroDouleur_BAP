@@ -7,30 +7,12 @@ use Core\Database;
 class AdminModel extends Database
 {
 
-    function getSondage($titre)
+    function getLien($lien)
     {
-        $sondage = $this->query("SELECT * FROM sondage WHERE titre='$titre'");
-        return $sondage;
+        $reqlien = $this->prepare("INSERT INTO video (lien) VALUES('$lien')");
     }
-
-    function getQuestion($idSondage)
+    function getTitreAudio($titreAudio)
     {
-        $question = $this->query("SELECT * FROM sondage_questions WHERE id_sondage='$idSondage'");
-        return $question;
-    }
-
-    function setSondage($titre)
-    {
-        $this->prepare("INSERT INTO sondage (titre) VALUES ('$titre')");
-    }
-
-    function setQuestion($idSondage, $question)
-    {
-        $this->prepare("INSERT INTO sondage_questions (id_sondage, titre) VALUES ('$idSondage', '$question')");
-    }
-
-    function setReponse($idQuestion, $reponse, $bool)
-    {
-        $this->prepare("INSERT INTO sondage_reponses (id_question, reponse, isTrue) VALUES ('$idQuestion', '$reponse', '$bool')");
+        $reqtitre_audio = $this->prepare("INSERT INTO audio (titreAudio) VALUES('$titreAudio')");
     }
 }

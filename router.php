@@ -33,6 +33,10 @@ if (array_key_exists("page", $_GET)) {
         case 'editProfil':
             $controller = new UserController();
             $controller->editProfil();
+        break; 
+        case 'admin':
+            $controller = new AdminController();
+            $controller->admin();
         break;   
     }
 } else {

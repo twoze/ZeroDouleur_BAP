@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Hôte : localhost:3306
--- Généré le : jeu. 26 nov. 2020 à 11:52
+-- Généré le : jeu. 10 déc. 2020 à 10:30
 -- Version du serveur :  5.7.24
 -- Version de PHP : 7.2.19
 
@@ -24,38 +24,12 @@ SET time_zone = "+00:00";
 -- --------------------------------------------------------
 
 --
--- Structure de la table `sondage`
+-- Structure de la table `audio`
 --
 
-CREATE TABLE `sondage` (
+CREATE TABLE `audio` (
   `id` int(11) NOT NULL,
-  `titre` varchar(255) NOT NULL,
-  `date` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP
-) ENGINE=InnoDB DEFAULT CHARSET=utf8;
-
--- --------------------------------------------------------
-
---
--- Structure de la table `sondage_questions`
---
-
-CREATE TABLE `sondage_questions` (
-  `id` int(11) NOT NULL,
-  `id_sondage` int(11) NOT NULL,
-  `titre` varchar(255) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8;
-
--- --------------------------------------------------------
-
---
--- Structure de la table `sondage_reponses`
---
-
-CREATE TABLE `sondage_reponses` (
-  `id` int(11) NOT NULL,
-  `id_question` int(11) NOT NULL,
-  `reponse` text NOT NULL,
-  `isTrue` tinyint(1) NOT NULL
+  `titreAudio` varchar(256) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 -- --------------------------------------------------------
@@ -77,28 +51,30 @@ CREATE TABLE `user` (
 
 INSERT INTO `user` (`id`, `pseudo`, `email`, `motdepasse`) VALUES
 (11, 'admin', 'admin@admin.com', 'd033e22ae348aeb5660fc2140aec35850c4da997'),
-(12, 'a', 'corentinancel@gmail.com', '86f7e437faa5a7fce15d1ddcb9eaeaea377667b8');
+(12, 'a', 'corentinancel@gmail.com', '86f7e437faa5a7fce15d1ddcb9eaeaea377667b8'),
+(13, 'Coco', 'coco@gmail.fr', 'a94a8fe5ccb19ba61c4c0873d391e987982fbbd3'),
+(14, 'lucas', 'zeze@gmail.fr', 'a94a8fe5ccb19ba61c4c0873d391e987982fbbd3');
+
+-- --------------------------------------------------------
+
+--
+-- Structure de la table `video`
+--
+
+CREATE TABLE `video` (
+  `id` int(11) NOT NULL,
+  `lien` varchar(255) NOT NULL,
+  `date` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
 -- Index pour les tables déchargées
 --
 
 --
--- Index pour la table `sondage`
+-- Index pour la table `audio`
 --
-ALTER TABLE `sondage`
-  ADD PRIMARY KEY (`id`);
-
---
--- Index pour la table `sondage_questions`
---
-ALTER TABLE `sondage_questions`
-  ADD PRIMARY KEY (`id`);
-
---
--- Index pour la table `sondage_reponses`
---
-ALTER TABLE `sondage_reponses`
+ALTER TABLE `audio`
   ADD PRIMARY KEY (`id`);
 
 --
@@ -108,32 +84,32 @@ ALTER TABLE `user`
   ADD PRIMARY KEY (`id`);
 
 --
+-- Index pour la table `video`
+--
+ALTER TABLE `video`
+  ADD PRIMARY KEY (`id`);
+
+--
 -- AUTO_INCREMENT pour les tables déchargées
 --
 
 --
--- AUTO_INCREMENT pour la table `sondage`
+-- AUTO_INCREMENT pour la table `audio`
 --
-ALTER TABLE `sondage`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=52;
-
---
--- AUTO_INCREMENT pour la table `sondage_questions`
---
-ALTER TABLE `sondage_questions`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=81;
-
---
--- AUTO_INCREMENT pour la table `sondage_reponses`
---
-ALTER TABLE `sondage_reponses`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=18;
+ALTER TABLE `audio`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 
 --
 -- AUTO_INCREMENT pour la table `user`
 --
 ALTER TABLE `user`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=13;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=15;
+
+--
+-- AUTO_INCREMENT pour la table `video`
+--
+ALTER TABLE `video`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=17;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
