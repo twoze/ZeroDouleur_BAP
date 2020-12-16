@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Hôte : localhost:3306
--- Généré le : jeu. 10 déc. 2020 à 10:30
+-- Généré le : mer. 16 déc. 2020 à 17:18
 -- Version du serveur :  5.7.24
 -- Version de PHP : 7.2.19
 
@@ -18,7 +18,7 @@ SET time_zone = "+00:00";
 /*!40101 SET NAMES utf8mb4 */;
 
 --
--- Base de données : `ajax`
+-- Base de données : `bap`
 --
 
 -- --------------------------------------------------------
@@ -29,7 +29,8 @@ SET time_zone = "+00:00";
 
 CREATE TABLE `audio` (
   `id` int(11) NOT NULL,
-  `titreAudio` varchar(256) NOT NULL
+  `titreAudio` varchar(256) NOT NULL,
+  `audioName` varchar(256) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 -- --------------------------------------------------------
@@ -97,7 +98,7 @@ ALTER TABLE `video`
 -- AUTO_INCREMENT pour la table `audio`
 --
 ALTER TABLE `audio`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
 
 --
 -- AUTO_INCREMENT pour la table `user`
@@ -109,7 +110,7 @@ ALTER TABLE `user`
 -- AUTO_INCREMENT pour la table `video`
 --
 ALTER TABLE `video`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=17;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=38;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;

@@ -11,8 +11,12 @@ class AdminModel extends Database
     {
         $reqlien = $this->prepare("INSERT INTO video (lien) VALUES('$lien')");
     }
-    function getTitreAudio($titreAudio)
-    {
-        $reqtitre_audio = $this->prepare("INSERT INTO audio (titreAudio) VALUES('$titreAudio')");
+
+    function getAudio($audioName, $titreAudio){
+        $insertaudio = $this->prepare("INSERT INTO audio(audioName, titreAudio) VALUES('$audioName', '$titreAudio')");
+    }
+    function checkAudio($audioName){
+        $reqaudio = $this->query("SELECT * FROM audio WHERE audioName = '$audioName'");
+        return ($reqaudio);
     }
 }

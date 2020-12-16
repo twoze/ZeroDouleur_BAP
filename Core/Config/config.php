@@ -2,7 +2,7 @@
 
 $dbConfig = [
     "host" => "localhost:3306",
-    "dbname" => "ajax",
+    "dbname" => "bap",
     "dbuser" => "root",
     "dbpass" => ""
 ];

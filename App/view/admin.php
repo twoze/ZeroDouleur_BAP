@@ -9,7 +9,7 @@
 
 <body>
     <h1>Page admin</h1>
-    <form method="POST">
+    <form method="POST" enctype="multipart/form-data">
     <table>
                     <tr>
                         <td >
@@ -33,7 +33,7 @@
                             <label for="audio">Audio :</label>
                         </td>
                         <td>
-                            <input type="file" placeholder="Votre audio" name="audio">
+                            <input type="file" placeholder="Votre audio" name="audio" accept="audio/*">
                         </td>
                     </tr>
                     <tr >
