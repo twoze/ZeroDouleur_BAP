@@ -1,0 +1,86 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #000C4E;
+    color: #ffff;
+    font-family: 'Inter', sans-serif;
+}
+
+header{
+height: 135px;
+display: flex;
+justify-content: space-between;
+background-color:#243070 ;
+align-items: center;
+}
+
+main{
+    padding: 50px 30px;
+}
+h1{
+    font-size: 16px;
+}
+#logo{
+    text-align: left;
+}
+#app{
+    background-color: #243070;
+    border-radius: 26px;
+    padding: 20px;
+    height: 530px;
+}
+.input{
+    padding-top: 20px;
+    display: grid;
+}
+input[type="radio"]{
+    display: none;
+}
+input[type="radio"] + label {
+    position: relative;
+    padding-left: 1.3rem;
+  }
+input[type="radio"] + label::before,
+input[type="radio"] + label::after {
+  display: block;
+  position: absolute;
+  box-sizing: border-box;
+  bottom: 0;
+  left: 0;
+  content:'';
+  width: 1rem;
+  height: 1rem; 
+  border-radius: 1rem;
+  
+}
+input[type="radio"]+ label::before {
+    background-color: #243070;
+    border:#000C4E 2px solid;
+}
+  input[type="radio"]:checked + label::after {
+    background-color: #000C4E;
+    border: #243070 2px solid;
+}
+button{
+  position: relative;
+  color: #ffff;
+  left: 30%;
+  width: 130px;
+  height: 36px;
+  margin: 10px 0 0 28px;
+  padding: 7px 29px 9px 23px;
+  text-align: center;
+  border-radius: 20px;
+  border: solid 1px #707070;
+  background-color: #00dcc2;
+}
+.connexion{
+    color: black;
+    width: 135px;
+    margin: 0 ;
+    padding: 0;
+    position: initial;
+}
