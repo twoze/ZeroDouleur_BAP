@@ -1,18 +1,18 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
+
 body{
     background-color: #000C4E;
     color: #ffff;
     font-family: 'Inter', sans-serif;
+     margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
 header{
 height: 135px;
 display: flex;
-justify-content: space-between;
+padding: 0 15px;
+justify-content: space-around;
 background-color:#243070 ;
 align-items: center;
 }
@@ -20,13 +20,19 @@ align-items: center;
 main{
     padding: 50px 30px;
 }
-h1{
+h2{
     font-size: 16px;
+}
+h1{
+    font-size: 24px;
+    margin-top: 19px;
+    margin-left: 5px;
 }
 #logo{
     text-align: left;
+    display: flex;
 }
-#app{
+.check{
     background-color: #243070;
     border-radius: 26px;
     padding: 20px;
@@ -67,8 +73,9 @@ input[type="radio"]+ label::before {
 button{
   position: relative;
   color: #ffff;
+  font-weight: bold;
   left: 30%;
-  width: 130px;
+  width: 120px;
   height: 36px;
   margin: 10px 0 0 28px;
   padding: 7px 29px 9px 23px;
@@ -79,8 +86,21 @@ button{
 }
 .connexion{
     color: black;
-    width: 135px;
+    width: 100px;
     margin: 0 ;
     padding: 0;
     position: initial;
+}
+@media screen 
+  and (min-device-width: 1200px) 
+  and (max-device-width: 1600px) 
+  and (-webkit-min-device-pixel-ratio: 1) { 
+      .check{
+          width: 20%;
+          margin: 0 auto;
+      }
+      button{
+        width: 130px;
+        
+      }
 }
