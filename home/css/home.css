@@ -24,6 +24,9 @@ align-items: center;
     color: white;
     text-decoration: none;
 }
+main{
+    padding: 21px;
+}
 
 footer{
     height: 515px;
