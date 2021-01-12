@@ -7,9 +7,11 @@
         <title>IndoloR: Connexion</title>
     </head>
     <body>
-        <a href="?page=home">
-            <img src="/App/img/logo.svg" alt="Logo">
-        </a>
+        <header>
+            <nav>
+                <a href="?page=home" class="logo"><img src="../App/img/logo.svg" alt="Logo"><h1>IndoloR</h1></a>
+            </nav>
+        </header>
         <div class="box">
             <h1>Connexion</h1>
             <form method="POST" action="">

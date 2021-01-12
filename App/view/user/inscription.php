@@ -3,18 +3,20 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/App/css/style.css">
+    <link rel="stylesheet" href="../App/css/style.css">
     <title>Document</title>
 </head>
 <body>
-    <a href="?page=home">
-        <img src="/App/img/logo.svg" alt="Logo">
-    </a>
+    <header>
+        <nav>
+            <a href="?page=home" class="logo"><img src="../App/img/logo.svg" alt="Logo"><h1>IndoloR</h1></a>
+        </nav>
+    </header>
     <div class="box">
         <h1>Inscription</h1>
         <form method="POST" action="">
         
-            <label for="pseudo">Nom Prénom</label>
+            <label for="pseudo">Pseudonyme</label>
             <input type="text" name="pseudo" value="<?php /*Si erreur, conserve le peseudo*/if(isset($pseudo)) { echo $pseudo; }?>">
 
             <label for="mail">Adresse-mail</label>
