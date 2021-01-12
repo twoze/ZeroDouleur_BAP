@@ -1,0 +1,17 @@
+body{
+    background-color: #000C4E;
+    color: #ffff;
+    font-family: 'Inter', sans-serif;
+     margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header{
+height: 135px;
+display: flex;
+padding: 0 15px;
+justify-content: space-around;
+background-color:#243070 ;
+align-items: center;
+}

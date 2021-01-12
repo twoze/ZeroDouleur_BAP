@@ -8,7 +8,7 @@
     </head>
     <body>
         <a href="?page=home">
-            <img src="../App/img/logo.svg" alt="Logo">
+            <img src="/App/img/logo.svg" alt="Logo">
         </a>
         <div class="box">
             <h1>Connexion</h1>
