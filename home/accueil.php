@@ -15,9 +15,7 @@
         <a href="?page=home" class="logo"><img src="img/Logo Indolor Render.svg" alt="logo"><h1>IndoloR</h1></a>
         <a href="?page=profil"><img src="img/profil.svg" alt=""></a>
         </nav>
-        <div class="nivDeDouleur">
-            <img src="img/ic_healing_48px.svg" alt="bande"><h2>Niveau de douleur</h2><a href=""><i class="fas fa-chevron-right"></i></a>
-        </div>
+        
     </header>
 
     <main>
@@ -25,7 +23,7 @@
     </main>
    <footer>
        <h2>Contact</h2>
-       <section>
+       <section class="reseaux">
            <div><img src="img/mail.svg" alt=""><a href="#">contact@indolor.fr</a></div>
            <div><img src="img/instagram.svg" alt=""><a href="#">IndoloR</a></div>
            <div><img src="img/linkedin.svg" alt=""><a href="#">IndoloR</a></div>

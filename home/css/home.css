@@ -11,7 +11,7 @@ height: 135px;
 display: flex;
 padding: 0 15px;
 justify-content: space-around;
-background-color:#243070 ;
+background-image: linear-gradient(to bottom, #243070 26%, #151f55);
 align-items: center;
 }
 .logo{
@@ -19,30 +19,47 @@ align-items: center;
     color: white;
     text-decoration: none;
 }
-.nivDeDouleur{
-    display: flex;
-    height: 51px;
-    justify-content: space-around;
-    background-color: #00041c;
-}
-.nivDeDouleur a, a{
+
+ a{
     color: white;
     text-decoration: none;
 }
-.nivDeDouleur h2, .nivDeDouleur a{
-    align-self: center;
-}
+
 footer{
-    
+    height: 515px;
     margin: 40px 0 0;
     padding: 18px 34px 44px 24px;
     background-image: linear-gradient(to bottom, #243070 26%, #151f55);
 }
 footer p{
     text-align: left;
+    font-size: 12px;
+    margin-top: 30px;
+    margin-bottom: 45px;
+}
+.reseaux div{
+    display: flex;
+    align-items: center;
+}
+.reseaux div img{
+    margin-right: 16px;
 }
 .logo-footer div{
     display: flex;
     justify-content: space-around;
     width: 190px;
+}
+@media screen 
+  and (min-device-width: 1200px) 
+  and (max-device-width: 1600px) 
+  and (-webkit-min-device-pixel-ratio: 1) { 
+    nav{
+    justify-content: space-between;
+    padding: 0 50px ;
+    }
+    footer p{
+        text-align: left;
+        font-size: 15px;
+        width: 500px;
+    }
 }
