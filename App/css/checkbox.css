@@ -71,18 +71,17 @@ input[type="radio"]+ label::before {
     border: #243070 2px solid;
 }
 button{
-  position: relative;
-  color: #ffff;
-  font-weight: bold;
-  left: 30%;
-  width: 120px;
-  height: 36px;
-  margin: 10px 0 0 28px;
-  padding: 7px 29px 9px 23px;
-  text-align: center;
-  border-radius: 20px;
-  border: solid 1px #707070;
-  background-color: #00dcc2;
+    width: 120px;
+    height: 50px;
+    position: relative;
+    left: 60%;
+    padding: 10px 40px;
+    border-radius: 25px;
+    background-color: #00dcc2;
+    border: none;
+    color: #ffffff;
+    box-shadow: 0 0 15px 0 #00dbc5;
+    transition: 0.5s ease-in;
 }
 .connexion{
     color: black;
@@ -98,9 +97,5 @@ button{
       .check{
           width: 20%;
           margin: 0 auto;
-      }
-      button{
-        width: 130px;
-        
       }
 }

@@ -14,15 +14,13 @@
 <header>
         <nav>
         <a href="?page=home" class="logo"><img src="../App/img/Logo Indolor Render.svg" alt="logo"><h1>IndoloR</h1></a>
-        <a href="?page=profil"><img src="../App/img/profil.svg" alt=""></a>
-        <a href="?page=inscription">Inscription</a>
+        <!-- <a href="?page=inscription">Inscription</a>
                     <a href="?page=connexion">Connexion</a>
-                    <a href="?page=home">Home</a>
+                    <a href="?page=home">Home</a> -->
                 <?php
                 if ($_SESSION) { ?>
                     <a href="?page=deconnexion">Deconnexion</a>
-                    <a href="?page=profil">Profil</a>
-                    <p>Vous êtes connectés en temps que <?php echo ($_SESSION['pseudo']) ?></p>
+                    <a href="?page=profil"><img src="../App/img/profil.svg" alt=""></a>
                     <?php
                     if ($_SESSION['email'] == "admin@admin.com") { ?>
                         <a href="?page=admin">Admin</a>
@@ -36,18 +34,18 @@
         <?php
 
         if($_SESSION){
-            $scandir = array_diff(scandir("../audio/"), array('..', '.'));
-            foreach($scandir as $fichier){
-        ?>
+            foreach($links as $link){
+            ?>
+             <iframe width="278" height="215" src="<?php echo $link?>" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <?php } 
+         $scandir = array_diff(scandir("../audio/"), array('..', '.'));
+         foreach($scandir as $fichier){?>
                <audio
                 controls
                 src="../audio/<?php echo $fichier ?>">
                     Your browser does not support the
                     <code>audio</code> element.
             </audio> 
-         <?php } 
-         foreach($links as $link){?>
-            <iframe width="560" height="315" src="<?php echo $link?>" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
          <?php } 
         }?>
          
@@ -57,7 +55,7 @@
 
     <footer>
        <h2>Contact</h2>
-       <section>
+       <section class="reseaux">
            <div><img src="../App/img/mail.svg" alt=""><a href="#">contact@indolor.fr</a></div>
            <div><img src="../App/img/instagram.svg" alt=""><a href="#">IndoloR</a></div>
            <div><img src="../App/img/linkedin.svg" alt=""><a href="#">IndoloR</a></div>
