@@ -27,4 +27,8 @@ class HomeController
 
         require ROOT . "/App/view/home/home.php";
     }
+    public function checkbox(){
+        // header("Location: ../public/?page=home");
+        require ROOT . "/App/view/checkbox.php";
+    }
 }

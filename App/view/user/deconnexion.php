@@ -9,6 +9,5 @@
     <p>Vous avez été deconnecté</p>
     <a href="?page=home">Home</a>
 
-
 </body>
 </html>

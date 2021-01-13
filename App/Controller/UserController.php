@@ -91,6 +91,7 @@ class UserController
     {
         session_destroy();
         require ROOT . "/App/view/user/deconnexion.php";
+        header("Location: ../public/?page=home");
     }
     public function profil()
     {

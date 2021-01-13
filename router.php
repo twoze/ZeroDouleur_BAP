@@ -38,8 +38,12 @@ if (array_key_exists("page", $_GET)) {
             $controller = new AdminController();
             $controller->admin();
         break;   
+        case 'checkbox':
+            $controller = new HomeController();
+            $controller->checkbox();
+            break;
     }
 } else {
     $controller = new HomeController();
-    $controller->home();
+    $controller->checkbox();
 }
