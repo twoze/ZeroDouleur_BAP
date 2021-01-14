@@ -31,13 +31,20 @@
         </nav>
     </header>
     <main>
-        <?php
+    <section>
+            <?php
 
-        if($_SESSION){
+        if($_SESSION){ ?>
+        <section>
+        <?php
             foreach($links as $link){
             ?>
+
              <iframe width="278" height="215" src="<?php echo $link?>" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-            <?php } 
+             <?php } ?>
+             </section>
+             <section>
+            <?php 
          $scandir = array_diff(scandir("../audio/"), array('..', '.'));
          foreach($scandir as $fichier){?>
                <audio
@@ -48,6 +55,7 @@
             </audio> 
          <?php } 
         }?>
+        </section>
          
     </main>
  
