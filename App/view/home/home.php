@@ -14,6 +14,7 @@
 <header>
         <nav>
         <a href="?page=home" class="logo"><img src="../App/img/Logo Indolor Render.svg" alt="logo"><h1>IndoloR</h1></a>
+
                 <?php
                 if ($_SESSION) { ?>
                     <a href="?page=deconnexion">Deconnexion</a>
@@ -23,6 +24,10 @@
                         <a href="?page=admin">Admin</a>
                     <?php }
                     ?>
+                <?php }
+                else {?>
+                    <a href="?page=connexion">Connexion</a>
+                    <a href="?page=inscription">Inscription</a>
                 <?php }
                 ?>
         </nav>
