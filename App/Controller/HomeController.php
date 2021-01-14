@@ -22,12 +22,16 @@ class HomeController
                 
             }
 
-
-
-
         require ROOT . "/App/view/home/home.php";
     }
     public function checkbox(){
+       
+        if (isset($_POST['formCheckbox'])) {
+            $checkbox = htmlspecialchars($_POST['checkbox']);
+            
+            $reqcheckbox = $this->model->insertCheckbox($checkbox);
+          
+        }
         // header("Location: ../public/?page=home");
         require ROOT . "/App/view/checkbox.php";
     }

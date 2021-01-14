@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Hôte : localhost:3306
--- Généré le : mer. 16 déc. 2020 à 17:18
+-- Généré le : mer. 13 jan. 2021 à 15:06
 -- Version du serveur :  5.7.24
 -- Version de PHP : 7.2.19
 
@@ -31,6 +31,17 @@ CREATE TABLE `audio` (
   `id` int(11) NOT NULL,
   `titreAudio` varchar(256) NOT NULL,
   `audioName` varchar(256) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+-- --------------------------------------------------------
+
+--
+-- Structure de la table `checkbox`
+--
+
+CREATE TABLE `checkbox` (
+  `id` int(11) NOT NULL,
+  `checkbox` int(255) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 -- --------------------------------------------------------
@@ -69,6 +80,16 @@ CREATE TABLE `video` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
+-- Déchargement des données de la table `video`
+--
+
+INSERT INTO `video` (`id`, `lien`, `date`) VALUES
+(40, 'https://www.youtube.com/embed/T2HN-MjfMbU', '2021-01-12 15:41:56'),
+(41, 'https://www.youtube.com/embed/B5mimngffGQ', '2021-01-12 15:47:21'),
+(42, 'https://www.youtube.com/embed/0VnxqUMQYzU', '2021-01-12 15:50:46'),
+(43, 'https://www.youtube.com/embed/XEymPGxopmg', '2021-01-12 16:01:21');
+
+--
 -- Index pour les tables déchargées
 --
 
@@ -76,6 +97,12 @@ CREATE TABLE `video` (
 -- Index pour la table `audio`
 --
 ALTER TABLE `audio`
+  ADD PRIMARY KEY (`id`);
+
+--
+-- Index pour la table `checkbox`
+--
+ALTER TABLE `checkbox`
   ADD PRIMARY KEY (`id`);
 
 --
@@ -98,7 +125,13 @@ ALTER TABLE `video`
 -- AUTO_INCREMENT pour la table `audio`
 --
 ALTER TABLE `audio`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
+
+--
+-- AUTO_INCREMENT pour la table `checkbox`
+--
+ALTER TABLE `checkbox`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=17;
 
 --
 -- AUTO_INCREMENT pour la table `user`
@@ -110,7 +143,7 @@ ALTER TABLE `user`
 -- AUTO_INCREMENT pour la table `video`
 --
 ALTER TABLE `video`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=38;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=44;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;

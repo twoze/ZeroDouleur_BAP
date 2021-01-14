@@ -6,6 +6,7 @@
     <link rel="stylesheet" href="../App/css/checkbox.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@600&display=swap" rel="stylesheet">
+    <script src="../lien.js"></script>
     <title>Document</title>
 </head>
 <body>
@@ -19,37 +20,37 @@
           une échelle de 1 à 10 :</h2>
         <form method="POST">
         <div class="input"> 
-        <input type="radio" id="1" value="1">
+        <input type="radio" id="1" value="1" name="checkbox">
         <label for="1">1</label>
         <br>
-        <input type="radio" id="2" value="2">
+        <input type="radio" id="2" value="2" name="checkbox">
         <label for="2">2</label>
         <br>
-        <input type="radio" id="3" value="3">
+        <input type="radio" id="3" value="3" name="checkbox">
         <label for="3">3</label>
         <br>
-        <input type="radio" id="4" value="4" >
+        <input type="radio" id="4" value="4" name="checkbox">
         <label for="4">4</label>
         <br>
-        <input type="radio" id="5" value="5">
+        <input type="radio" id="5" value="5" name="checkbox">
         <label for="5">5</label>
         <br>
-        <input type="radio" id="6" value="6">
+        <input type="radio" id="6" value="6" name="checkbox">
         <label for="6">6</label>
         <br>
-        <input type="radio" id="7" value="7">
+        <input type="radio" id="7" value="7" name="checkbox">
         <label for="7">7</label>
         <br>
-        <input type="radio" id="8" value="8">
+        <input type="radio" id="8" value="8" name="checkbox">
         <label for="8">8</label>
         <br>
-        <input type="radio" id="9" value="9">
+        <input type="radio" id="9" value="9" name="checkbox">
         <label for="9">9</label>
         <br>
-        <input  type="radio" id="10" value="10" >
+        <input  type="radio" id="10" value="10" name="checkbox">
         <label for="10">10</label>
         <br>
-        <button class="suite">Suite</button>
+        <button class="suite" name="formCheckbox" type="submit" id="lien">Suite</button>
       </div>
       <form>
         

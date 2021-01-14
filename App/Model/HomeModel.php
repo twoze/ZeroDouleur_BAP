@@ -11,4 +11,7 @@ class HomeModel extends Database
         $reqlien = $this->query("SELECT lien FROM video");
         return($reqlien);
     }
+    function insertCheckbox($checkbox){
+        $reqcheckbox = $this->prepare("INSERT INTO checkbox(checkbox) VALUES('$checkbox')");
+    }
 }
