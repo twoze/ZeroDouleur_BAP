@@ -50,7 +50,7 @@
         <input  type="radio" id="10" value="10" name="checkbox">
         <label for="10">10</label>
         <br>
-        <input type="submit" value="Envoyer" class="btn">
+        <button type="submit" value="Envoyer" class="btn" name='formCheckbox'>Valider</button>
       </div>
       <form>
         

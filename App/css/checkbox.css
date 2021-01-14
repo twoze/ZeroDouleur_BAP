@@ -105,6 +105,9 @@ input[type="radio"]+ label::before {
     padding: 0;
     position: initial;
 }
+a {
+    text-align: center;
+}
 @media screen 
   and (min-device-width: 1200px) 
   and (max-device-width: 1600px) 

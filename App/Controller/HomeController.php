@@ -30,7 +30,7 @@ class HomeController
             $checkbox = htmlspecialchars($_POST['checkbox']);
             
             $reqcheckbox = $this->model->insertCheckbox($checkbox);
-          
+            header('Location: ../public/?page=home');
         }
         // header("Location: ../public/?page=home");
         require ROOT . "/App/view/checkbox.php";
