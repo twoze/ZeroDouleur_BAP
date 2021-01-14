@@ -12,7 +12,7 @@
 <body>
   <header><!--menu-->
     <div id="logo"><img src="../App/img/Logo Indolor Render.svg" alt="logo"><h1>IndoloR</h1></div>
-    <button class="connexion">Se connecter</button>
+    <a href="?page=connexion"><button class="btn">Se connecter</button></a>
   </header>
   <main>
     <div class="check"><!--formulaire d'évaluation de douleur-->
@@ -50,7 +50,7 @@
         <input  type="radio" id="10" value="10" name="checkbox">
         <label for="10">10</label>
         <br>
-        <button class="suite" name="formCheckbox" type="submit" id="lien">Suite</button>
+        <button type="submit" value="Envoyer" class="btn" name='formCheckbox'>Valider</button>
       </div>
       <form>
         

@@ -10,7 +10,7 @@
     <header>
         <nav><!--menu-->
             <a href="?page=home" class="logo"><img src="../App/img/logo.svg" alt="Logo"><h1>IndoloR</h1></a>
-            <button class="btn">Retour</button>
+            <a href="?page=profil"><button class="btn">Retour</button></a>
         </nav>
     </header>
     <div class="box"><!--Edition de mon profil-->
