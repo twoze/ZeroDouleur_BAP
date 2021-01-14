@@ -6,6 +6,7 @@
     <link rel="stylesheet" href="../App/css/checkbox.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@600&display=swap" rel="stylesheet">
+    <script src="../lien.js"></script>
     <title>Document</title>
 </head>
 <body>
@@ -49,7 +50,7 @@
         <input  type="radio" id="10" value="10" name="checkbox">
         <label for="10">10</label>
         <br>
-        <button class="suite" name="formCheckbox" type="submit">Suite</button>
+        <button class="suite" name="formCheckbox" type="submit" id="lien">Suite</button>
       </div>
       <form>
         
