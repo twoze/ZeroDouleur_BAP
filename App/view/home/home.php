@@ -12,7 +12,7 @@
 
 <body>
 <header>
-        <nav>
+        <nav><!--en-tête-->
         <a href="?page=home" class="logo"><img src="../App/img/Logo Indolor Render.svg" alt="logo"><h1>IndoloR</h1></a>
                 <?php
                 if ($_SESSION) { ?>
@@ -27,7 +27,7 @@
                 ?>
         </nav>
     </header>
-    <main>
+    <main><!--audio &vidéo -->
     <section>
             <?php
 
@@ -36,7 +36,7 @@
         <?php
             foreach($links as $link){
             ?>
-
+                 <!--affichage des vidéos-->
              <iframe width="278" height="215" src="<?php echo $link?>" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
              <?php } ?>
              </section>
@@ -44,6 +44,7 @@
             <?php 
          $scandir = array_diff(scandir("../audio/"), array('..', '.'));
          foreach($scandir as $fichier){?>
+         <!--affichage des audios-->
                <audio
                 controls
                 src="../audio/<?php echo $fichier ?>">
@@ -58,8 +59,8 @@
  
 
 
-    <footer>
-       <h2>Contact</h2>
+    <footer><!--footer-->
+       <h2>Contact</h2><!--contact/réseaux sociaux-->
        <section class="reseaux">
            <div><img src="../App/img/mail.svg" alt=""><a href="#">contact@indolor.fr</a></div>
            <div><img src="../App/img/instagram.svg" alt=""><a href="#">IndoloR</a></div>
@@ -71,7 +72,7 @@
       Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
     Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
        </section>
-       <section class="logo-footer">
+       <section class="logo-footer"><!--footer-logo-->
            <div><h3>© IndoloR</h3><img src="../App/img/Logo Indolor Render.svg" alt="logo"></div>
        </section>
    </footer>

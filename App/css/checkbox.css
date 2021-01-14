@@ -7,7 +7,7 @@ body{
     padding: 0;
     box-sizing: border-box;
 }
-
+/*EN-TETE*/
 header{
 height: 135px;
 display: flex;
@@ -17,9 +17,6 @@ background-color:#243070 ;
 align-items: center;
 }
 
-main{
-    padding: 50px 30px;
-}
 h2{
     font-size: 16px;
 }
@@ -31,6 +28,10 @@ h1{
 #logo{
     text-align: left;
     display: flex;
+}
+/*CKECKBOX*/
+main{
+    padding: 50px 30px;
 }
 .check{
     background-color: #243070;
@@ -70,6 +71,7 @@ input[type="radio"]+ label::before {
     background-color: #000C4E;
     border: #243070 2px solid;
 }
+/*DESIGN DES BOUTONS*/
 button{
     width: 120px;
     height: 50px;
@@ -90,6 +92,8 @@ button{
     padding: 0;
     position: initial;
 }
+/* RESPONSIVE */
+
 @media screen 
   and (min-device-width: 1200px) 
   and (max-device-width: 1600px) 

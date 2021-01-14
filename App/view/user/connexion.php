@@ -7,13 +7,13 @@
         <title>IndoloR: Connexion</title>
     </head>
     <body>
-        <header>
+        <header><!--menu-->
             <nav>
                 <a href="?page=home" class="logo"><img src="../App/img/logo.svg" alt="Logo"><h1>IndoloR</h1></a>
             </nav>
         </header>
         <div class="box">
-            <h1>Connexion</h1>
+            <h1>Connexion</h1><!--formulaire de connexion-->
             <form method="POST" action="">
                 <label for="email">Adresse mail</label>
                 <input type="email" name="mailConnect">

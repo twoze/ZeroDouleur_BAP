@@ -10,12 +10,12 @@
     <title>Document</title>
 </head>
 <body>
-  <header>
+  <header><!--menu-->
     <div id="logo"><img src="../App/img/Logo Indolor Render.svg" alt="logo"><h1>IndoloR</h1></div>
     <button class="connexion">Se connecter</button>
   </header>
   <main>
-    <div class="check">
+    <div class="check"><!--formulaire d'évaluation de douleur-->
     <h2>Notez votre douleur sur 
           une échelle de 1 à 10 :</h2>
         <form method="POST">

@@ -7,13 +7,13 @@
     <title>Document</title>
 </head>
 <body>
-    <header>
+    <header><!--menu-->
         <nav>
             <a href="?page=home" class="logo"><img src="../App/img/logo.svg" alt="Logo"><h1>IndoloR</h1></a>
         </nav>
     </header>
     <div class="box">
-        <h1>Inscription</h1>
+        <h1>Inscription</h1><!--formulaire d'inscription-->
         <form method="POST" action="">
         
             <label for="pseudo">Pseudonyme</label>
