@@ -12,7 +12,7 @@
 <body>
   <header><!--menu-->
     <div id="logo"><img src="../App/img/Logo Indolor Render.svg" alt="logo"><h1>IndoloR</h1></div>
-    <a href="?page=connexion"><button class="btn">Se connecter</button></a>
+    <a href="?page=connexion"><button class="btn-c">Se connecter</button></a>
   </header>
   <main>
     <div class="check"><!--formulaire d'évaluation de douleur-->

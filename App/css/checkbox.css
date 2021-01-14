@@ -36,9 +36,7 @@ main{
 .check{
     background-color: #243070;
     height: auto;
-    width: 30%;
-    margin: auto;
-    padding: 50px;
+    padding: 20px;
     border-radius: 25px;
     color: #ffffff;
     background-image: linear-gradient(to bottom, #243070 26%, #151f55);
@@ -79,8 +77,10 @@ input[type="radio"]+ label::before {
 button{
     width: 120px;
 }
-.btn {
-    width: auto;
+.btn, .btn-c {
+    width: 130px;
+    position: relative;
+    left: 40%;
     height: 50px;
     padding: 10px 40px;
     border-radius: 25px;
@@ -103,7 +103,7 @@ button{
     outline: none;
 }
 
-.connexion{
+.btn-c{
     color: black;
     width: 100px;
     margin: 0 ;
