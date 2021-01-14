@@ -12,7 +12,7 @@
     <header>
         <nav>
             <a href="?page=home" class="logo"><img src="../App/img/logo.svg" alt="Logo"><h1>IndoloR</h1></a>
-            <button class="btn">Retour</button>
+            <a href="?page=home"><button class="btn">Retour</button></a>
         </nav>
     </header>
     <div class="box">

@@ -10,6 +10,7 @@
         <header>
             <nav>
                 <a href="?page=home" class="logo"><img src="../App/img/logo.svg" alt="Logo"><h1>IndoloR</h1></a>
+                <a href="?page=inscription"><button class="btn">S'inscrire</button></a>
             </nav>
         </header>
         <div class="box">

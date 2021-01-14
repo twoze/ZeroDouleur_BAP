@@ -14,6 +14,10 @@ justify-content: space-around;
 background-image: linear-gradient(to bottom, #243070 26%, #151f55);
 align-items: center;
 }
+
+section {
+    text-align: center;
+}
 .logo{
     display: flex;
     color: white;

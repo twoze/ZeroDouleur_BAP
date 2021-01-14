@@ -13,7 +13,7 @@ height: 135px;
 display: flex;
 padding: 0 15px;
 justify-content: space-around;
-background-color:#243070 ;
+background-image: linear-gradient(to bottom, #243070 26%, #151f55);
 align-items: center;
 }
 
@@ -34,9 +34,13 @@ h1{
 }
 .check{
     background-color: #243070;
-    border-radius: 26px;
-    padding: 20px;
-    height: 530px;
+    height: auto;
+    width: 30%;
+    margin: auto;
+    padding: 50px;
+    border-radius: 25px;
+    color: #ffffff;
+    background-image: linear-gradient(to bottom, #243070 26%, #151f55);
 }
 .input{
     padding-top: 20px;
@@ -70,11 +74,9 @@ input[type="radio"]+ label::before {
     background-color: #000C4E;
     border: #243070 2px solid;
 }
-button{
-    width: 120px;
+.btn {
+    width: auto;
     height: 50px;
-    position: relative;
-    left: 60%;
     padding: 10px 40px;
     border-radius: 25px;
     background-color: #00dcc2;
@@ -83,6 +85,19 @@ button{
     box-shadow: 0 0 15px 0 #00dbc5;
     transition: 0.5s ease-in;
 }
+
+.btn:hover {
+    box-shadow: none;
+}
+
+.right {
+    float: right;
+}
+
+.btn:focus {
+    outline: none;
+}
+
 .connexion{
     color: black;
     width: 100px;

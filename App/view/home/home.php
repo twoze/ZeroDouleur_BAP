@@ -28,7 +28,6 @@
         </nav>
     </header>
     <main>
-    <section>
             <?php
 
         if($_SESSION){ ?>
