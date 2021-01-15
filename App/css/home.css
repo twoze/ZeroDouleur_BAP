@@ -73,16 +73,14 @@ footer p{
 
 /* RESPONSIVE */
 @media screen 
-  and (min-device-width: 400px) 
-  and (-webkit-min-device-pixel-ratio: 1) { 
-
-    audio {
-        width: 380px;
-    }
-    iframe{
-        width: 390px;
+  and (max-device-width: 650px) { 
+    nav {
+        align-items: center;
+        flex-flow: column;
+        padding: 30px;
     }
 }
+
 @media screen 
   and (min-device-width: 800px) 
   and (max-device-width: 1600px) 

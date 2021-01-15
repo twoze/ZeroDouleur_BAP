@@ -1,0 +1,12 @@
+.fa, .fas {
+    font-weight: 900;
+    align-self: center;
+    font-size: 30px;
+}
+.logo1{
+display: flex;
+}
+#logo{
+    width: 240px;
+    justify-content: space-around;
+}
