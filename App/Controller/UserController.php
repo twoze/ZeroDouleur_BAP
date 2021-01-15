@@ -4,7 +4,7 @@ namespace App\Controller;
 
 use App\Model\UserModel;
 
-
+// Conditions des requetes sur la page User
 
 class UserController
 {
@@ -13,7 +13,7 @@ class UserController
     {
         $this->model = new UserModel();
     }
-
+    // Conditions des requetes sur la page Inscription
     public function inscription()
     {
         if (isset($_POST['forminscription'])) {
@@ -22,9 +22,6 @@ class UserController
             $mail2 = htmlspecialchars($_POST['email2']);
             $motdepasse = sha1($_POST['motdepasse']);
             $motdepasse2 = sha1($_POST['motdepasse2']);
-
-            // $motdepasse = password_hash($_POST['motdepasse'], PASSWORD_DEFAULT);
-            // $motdepasse2 = password_hash($_POST['motdepasse2'], PASSWORD_DEFAULT);
 
             if (!empty($_POST['pseudo']) and !empty($_POST['email']) and !empty($_POST['email2']) and !empty($_POST['motdepasse']) and !empty($_POST['motdepasse2'])) {
                 $pseudolength = strlen($pseudo);
@@ -62,7 +59,7 @@ class UserController
         }
         require ROOT . "/App/view/user/inscription.php";
     }
-
+    // Conditions des requetes sur la page Connexion
     public function connexion()
     {
         if (isset($_POST['formConnect'])) {
@@ -86,19 +83,21 @@ class UserController
         }
         require ROOT . "/App/view/user/connexion.php";
     }
-
+    // deconnexion 
     public function deconnexion()
     {
         session_destroy();
         require ROOT . "/App/view/user/deconnexion.php";
         header("Location: ../public/?page=checkbox");
     }
+    // Conditions des requetes sur la page profil
     public function profil()
     {
         $sessionID = $_SESSION['id'];
         $user = $this->model->getUser($sessionID);
         require ROOT . "/App/view/profil.php";
     }
+    // Conditions des requetes sur la page EditProfil
     public function editProfil()
     {
 

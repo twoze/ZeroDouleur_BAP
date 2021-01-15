@@ -4,6 +4,8 @@ namespace App\Controller;
 
 use App\Model\AdminModel;
 
+// Conditions des requetes sur la page admin
+
 class AdminController
 {
     public function __construct()

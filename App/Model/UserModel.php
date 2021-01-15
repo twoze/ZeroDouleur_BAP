@@ -4,6 +4,9 @@ namespace App\Model;
 
 use Core\Database;
 
+// requete BDD pour la partie User
+
+
 class UserModel extends Database
 {
 

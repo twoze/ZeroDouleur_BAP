@@ -5,7 +5,7 @@ namespace App\Controller;
 
 use App\Model\HomeModel;
 
-
+// Conditions des requetes sur la page Home
 class HomeController
 {
     public function __construct()
@@ -24,6 +24,8 @@ class HomeController
 
         require ROOT . "/App/view/home/home.php";
     }
+
+// Conditions des requetes sur la page Checkbox
     public function checkbox(){
        
         if (isset($_POST['formCheckbox'])) {

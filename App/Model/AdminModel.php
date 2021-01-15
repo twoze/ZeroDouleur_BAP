@@ -4,6 +4,8 @@ namespace App\Model;
 
 use Core\Database;
 
+// requete BDD pour la page Admin
+
 class AdminModel extends Database
 {
 
